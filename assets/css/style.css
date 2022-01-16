@@ -174,3 +174,16 @@ span#year {
 .card {
     min-height: 416px;
 }
+
+
+#todo_result .alert {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#todo_result .btn-close {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1em;
+    text-align: center;
+}

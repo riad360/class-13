@@ -39,7 +39,8 @@ start.addEventListener('click', (e) => {
 
     }, 1000);
 
-    stop.addEventListener('click', () => {
+    stop.addEventListener('click', (e) => {
+        e.preventDefault();
         clearInterval(clear_count);
     })
 
