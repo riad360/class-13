@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Digital-7";
+    src: url("../fonts/digital-7.eot") format("eot"),
+        url("../fonts/digital-7.woff") format("woff"),
+        url("../fonts/digital-7.ttf") format("truetype"),
+        url("../fonts/digital-7.svg#WendyLPStd-Medium") format("svg");
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Digital-7';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.clock-img {
+    position: relative;
+}
+
+.clock {
+    color: red;
+}
+
+.clock span {
+    font-size: 80px;
+    position: relative;
+    margin: 10px;
+}
+
+span#h {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    color: #E5E5E5;
+}
+
+span#m {
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    color: #E5E5E5;
+}
+
+span#s {
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    font-size: 50px;
+    color: #FCA311;
+}
+
+span#am {
+    position: absolute;
+    top: 40%;
+    right: 35%;
+    color: #FCA311;
+    border: 1px solid #FCA311;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* span#day {
+    position: absolute;
+    left: 170px;
+    top: 246px;
+} */
+span#day {
+    position: absolute;
+    left: 38%;
+    top: 63%;
+    background: #ddd;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.date {
+    font-size: 40px;
+    color: #E5E5E5;
+}
+
+span#month {
+    position: absolute;
+    top: 231px;
+    left: 207px;
+    color: #FCA311;
+    font-size: 35px;
+}
+
+span#year {
+    position: absolute;
+    top: 262px;
+    left: 206px;
+    color: #FCA311;
+    font-size: 35px;
+}
+
+/*1366 Screen Size*/
+@media (max-width:1366px) {
+    span#h {
+        font-size: 60px;
+    }
+
+    span#m {
+        font-size: 50px;
+    }
+
+    span#s {
+        font-size: 40px;
+    }
+
+    span#month {
+        top: 55%;
+        left: 50%;
+        font-size: 25px;
+    }
+
+    span#year {
+        top: 65%;
+        left: 50%;
+        font-size: 25px;
+    }
+
+    span#day {
+        left: 38%;
+        top: 63%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 3px;
+        font-size: 25px;
+    }
+}
